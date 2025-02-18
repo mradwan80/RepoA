@@ -24,4 +24,5 @@ jobs:
         run: cmake --build build
         
   trigger-dependencies:
+    need: build
     uses: mradwan80/RepoB/.github/workflows/downstream.yml@main
